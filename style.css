@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    background-color: darkslategray;
+    justify-content: center;
+}
+
+.calculatorBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid gray;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: row;
+}
+
+.numKeys, .operatorKeys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.numKeys button, .operatorKeys button {
+    margin: 5px;
+    padding: 15px 20px;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}
+
+button:active {
+    background-color: rgb(56, 56, 56);
+    color: #dcdcdc;
+}
